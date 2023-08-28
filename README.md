@@ -19,6 +19,8 @@ In the following example, we use a parameter file located in the working directo
 ros2 run ros_natnet broadcast --ros-args --params-file ./ros_natnet_broadcaster.yaml
 ```
 
+The executable links with the [NatNet SDK](https://optitrack.com/software/natnet-sdk/) library (libNatNet.so), so make sure the library can be found at runtime (e.g. it is in /usr/local/lib or anywhere in one of the LD_LIBRARY_PATH environment variable paths).
+
 ## Parameters
 
 The parameter file should be in ROS-parameter-file format, like this:
